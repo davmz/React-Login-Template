@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const SignInTest = () => {
-    const imgUrl = "https://source.unsplash.com/nVGv6BLPjns";
+    const imgUrl = "https://source.unsplash.com/nVGv6BLPjns"; // Unsplash Image used
 
     /**
      * Handles the user form sign in.
@@ -16,7 +16,7 @@ const SignInTest = () => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
             <div className="hidden sm:block">
-                <img className="w-full h-screen object-cover" src={imgUrl} alt="" />
+                <img className="w-full h-screen object-cover" src={imgUrl} alt="Mountain Peak Credited to Krishna Yadav" />
             </div>
 
             <div className="bg-gray-200 flex flex-col justify-center">
@@ -46,13 +46,6 @@ const SignInTest = () => {
                         >
                             Forgot Password
                         </Link>
-
-                        {/* <a
-                            href="/reset-password"
-                            className="text-gray-600 hover:text-gray-800 hover:underline"
-                        >
-                            Forgot Password
-                        </a> */}
                     </div>
 
                     <button
