@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const SignInTest = () => {
     const imgUrl = "https://source.unsplash.com/nVGv6BLPjns"; // Unsplash Image used
+
+    useEffect(() => {
+        document.title = "Sign In - Login Template "
+    }, []);
 
     /**
      * Handles the user form sign in.
@@ -16,7 +21,11 @@ const SignInTest = () => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
             <div className="hidden sm:block">
-                <img className="w-full h-screen object-cover" src={imgUrl} alt="Mountain Peak Credited to Krishna Yadav" />
+                <img
+                    src={imgUrl}
+                    className="w-full h-screen object-cover"
+                    alt="Mountain Peak Credited to Krishna Yadav"
+                />
             </div>
 
             <div className="bg-gray-200 flex flex-col justify-center">
